@@ -109,7 +109,6 @@ update-checkers:
 	@go install golang.org/x/tools/cmd/goimports@latest
 	@go install github.com/googleapis/api-linter/cmd/api-linter@v1.32.3
 	@go install github.com/bufbuild/buf/cmd/buf@v1.6.0
-	@go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.50.1
 
 
 update-mockgen:
@@ -218,10 +217,6 @@ copyright-check:
 copyright:
 	@printf $(COLOR) "Fix license header..."
 	@go run ./cmd/tools/copyright/licensegen.go
-
-lint:
-	@printf $(COLOR) "Run linter..."
-	@golangci-lint run
 
 api-linter:
 	@printf $(COLOR) "Run api-linter..."

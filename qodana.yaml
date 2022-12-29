@@ -1,0 +1,5 @@
+version: "1.0"
+linter: jetbrains/qodana-go:latest
+profile:
+  name: "Project Default"
+bootstrap: "go mod download && go mod verify"

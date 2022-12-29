@@ -1,6 +1,6 @@
 .tmp/
 
-.idea/
+/.idea/*
 .vscode/settings.json
 .vscode
 *.code-workspace
@@ -29,3 +29,6 @@
 
 # direnv
 .envrc
+
+# Qodana
+!.idea/inspectionProfiles/Project_Default.xml
